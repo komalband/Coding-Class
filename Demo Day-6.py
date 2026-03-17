@@ -72,15 +72,46 @@
 # print(list1)
 # print(list1[-2])
 
-#remove duplicates from unsorted array
-def remove_duplicates(arr):
-    seen = set()
-    result = []
-    for num in arr:
-        if num not in seen:
-            seen.add(num)
-            result.append(num)
-    return result
-arr = [1, 2, 3, 2, 4, 1, 5]
-print(arr)
-print(remove_duplicates(arr))
+# #remove duplicates from unsorted array
+# def remove_duplicates(arr):
+#     seen = set()
+#     result = []
+#     for num in arr:
+#         if num not in seen:
+#             seen.add(num)
+#             result.append(num)
+#     return result
+# arr = [1, 2, 3, 2, 4, 1, 5]
+# print(arr)
+# print(remove_duplicates(arr))
+
+# myset={1,2,"sanjay",5.66,"rahul","ayush","ramesh","ankit","rishikesh"}
+# print(myset)
+# # print(myset[0])
+# # myset.discard(3)
+# print(myset)
+# # myset.remove(3)
+# print(myset)
+
+# myset ={10,20,30,40}
+# yorset={"prashant","jha"}
+# newset=myset.union(yorset)
+# print(newset)
+
+# intersection retuen common element
+# myset ={10,20,30,40}
+# yorset={10,50,60,30}
+# print(myset.intersection(yorset))
+
+# list=[3,2,3,1,2,4]
+# newline=set(list)
+# print(newline)
+
+list = [0, 1, 0, 3, 12]
+
+for i in list:
+    if i == 0:
+        list.remove(i)
+        list.append(i)
+
+print(list)
